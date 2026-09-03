@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Colegio Delmira Agustini - Educación bilingüe que forma mentes brillantes y corazones generosos. Brazo Oriental, Montevideo.">
+  <title>Colegio Delmira Agustini | Educación bilingüe en Montevideo</title>
+
+  <!-- Google Fonts: Playfair Display (títulos) y Montserrat (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome: iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar sticky -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <!-- Logo -->
+      <a href="#inicio" class="navbar__logo">
+        <img src="./assets/images/logo.jpeg" alt="Logotipo del Colegio Delmira Agustini" class="navbar__logo-img">
+        <span class="navbar__logo-text" id="nav-nombre">Colegio</span>
+      </a>
+
+      <!-- Menú principal -->
+      <nav class="navbar__menu" id="navbar-menu" aria-label="Menú principal">
+        <ul class="navbar__list" id="navbar-list">
+          <li><a href="#inicio" class="navbar__link">Inicio</a></li>
+          <li><a href="#quienes-somos" class="navbar__link">Quiénes somos</a></li>
+          <li><a href="#niveles" class="navbar__link">Niveles</a></li>
+          <li><a href="#propuesta" class="navbar__link">Propuesta</a></li>
+          <li><a href="#comunidad" class="navbar__link">Comunidad</a></li>
+          <li><a href="#contacto" class="navbar__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botón hamburguesa (mobile) -->
+      <button class="navbar__toggle" id="navbar-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span class="navbar__bar"></span>
+        <span class="navbar__bar"></span>
+        <span class="navbar__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección: 1. Hero con slider automático -->
+    <section class="hero" id="inicio">
+      <!-- Slides generados por JS desde schoolData.sliderImages -->
+      <div class="hero__slides" id="hero-slides"></div>
+
+      <!-- Overlay con gradiente para legibilidad -->
+      <div class="hero__overlay"></div>
+
+      <!-- Contenido del slide actual -->
+      <div class="hero__content" id="hero-content">
+        <h1 class="hero__title" id="hero-title">...</h1>
+        <p class="hero__subtitle" id="hero-subtitle">...</p>
+        <a href="#quienes-somos" class="btn btn--hero">Conocé más</a>
+      </div>
+
+      <!-- Flechas de navegación -->
+      <button class="hero__arrow hero__arrow--prev" id="hero-prev" aria-label="Slide anterior">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="hero__arrow hero__arrow--next" id="hero-next" aria-label="Slide siguiente">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <!-- Dots indicadores (generados por JS) -->
+      <div class="hero__dots" id="hero-dots"></div>
+    </section>
+
+    <!-- Sección: 2. Quiénes somos -->
+    <section class="section quienes-somos" id="quienes-somos">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Una institución con historia y visión de futuro</h2>
+        </div>
+
+        <div class="quienes-somos__grid">
+          <!-- Contenido de texto -->
+          <div class="quienes-somos__content">
+            <p class="quienes-somos__intro">
+              Fundado en <span id="qs-fundacion">1985</span>, el <span id="qs-nombre">Colegio Delmira Agustini</span> es un referente en educación bilingüe en la zona de Brazo Oriental. Nuestra propuesta combina excelencia académica, formación en valores y un ambiente de cercanía donde cada estudiante es protagonista de su aprendizaje.
+            </p>
+            <p class="quienes-somos__additional">
+              Creemos en una educación integral que desarrolle el pensamiento crítico, la creatividad y las habilidades socioemocionales. Contamos con un equipo docente en constante capacitación y una comunidad educativa comprometida y participativa.
+            </p>
+          </div>
+
+          <!-- Imagen real del edificio -->
+          <div class="quienes-somos__media">
+            <img src="./assets/images/edificio.jpeg" alt="Foto del edificio del Colegio Delmira Agustini" class="quienes-somos__img">
+          </div>
+        </div>
+
+        <!-- Tarjetas de estadísticas -->
+        <div class="stats" id="stats">
+          <div class="stat-card">
+            <span class="stat-card__number">35+</span>
+            <span class="stat-card__label">años de trayectoria</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number">500+</span>
+            <span class="stat-card__label">estudiantes</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number">95%</span>
+            <span class="stat-card__label">de aprobación en exámenes internacionales</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: 3. Niveles educativos -->
+    <section class="section niveles" id="niveles">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Acompañamos cada etapa del desarrollo</h2>
+        </div>
+
+        <!-- Grid de niveles (generado por JS desde schoolData.niveles) -->
+        <div class="niveles__grid" id="niveles-grid"></div>
+      </div>
+    </section>
+
+    <!-- Sección: 4. Propuesta educativa -->
+    <section class="section propuesta" id="propuesta">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Lo que nos hace diferentes</h2>
+          <p class="section__subtitle">Nuestra propuesta bilingüe y los pilares de nuestra educación</p>
+        </div>
+
+        <!-- Grid de beneficios (generado por JS desde schoolData.beneficios) -->
+        <div class="beneficios__grid" id="beneficios-grid"></div>
+
+        <!-- Banner destacado con fondo dorado -->
+        <div class="propuesta__banner">
+          <i class="fas fa-certificate propuesta__banner-icon"></i>
+          <p class="propuesta__banner-text">Programa bilingüe certificado. Preparación para exámenes de Cambridge desde los 6 años.</p>
+        </div>
+
+        <!-- Listado de puntos del programa bilingüe (generado por JS) -->
+        <div class="programa">
+          <h3 class="programa__title">Programa bilingüe</h3>
+          <p class="programa__descripcion" id="programa-descripcion"></p>
+          <ul class="programa__lista" id="programa-lista"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: 5. Actividades y talleres -->
+    <section class="section actividades" id="actividades">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Más que clases, experiencias</h2>
+          <p class="section__subtitle">Creemos que el aprendizaje trasciende el aula. Por eso ofrecemos una amplia variedad de talleres y actividades para desarrollar talentos y pasiones.</p>
+        </div>
+
+        <!-- Grid de actividades (generado por JS desde schoolData.actividades) -->
+        <div class="actividades__grid" id="actividades-grid"></div>
+      </div>
+    </section>
+
+    <!-- Sección: 6. Comunidad (testimonios) -->
+    <section class="section comunidad" id="comunidad">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Lo que dicen nuestras familias</h2>
+        </div>
+
+        <!-- Carrusel de testimonios -->
+        <div class="testimonios__carousel" id="testimonios-carousel"></div>
+
+        <!-- Flechas de navegación -->
+        <button class="testimonios__arrow testimonios__arrow--prev" id="testimonio-prev" aria-label="Testimonio anterior">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="testimonios__arrow testimonios__arrow--next" id="testimonio-next" aria-label="Testimonio siguiente">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <!-- Dots indicadores -->
+        <div class="testimonios__dots" id="testimonios-dots"></div>
+      </div>
+    </section>
+
+    <!-- Sección: 7. Contacto -->
+    <section class="section contacto" id="contacto">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Visitanos y conocé el colegio</h2>
+          <p class="section__subtitle">Coordiná una visita guiada o solicitá información. Respondemos dentro de las 24 horas hábiles.</p>
+        </div>
+
+        <div class="contacto__grid">
+          <!-- Formulario de contacto -->
+          <div class="contacto__card">
+            <form class="contacto__form" id="contacto-form">
+              <div class="form__group">
+                <label for="campo-nombre" class="form__label">Nombre</label>
+                <input type="text" id="campo-nombre" name="nombre" class="form__input" required placeholder="Tu nombre">
+              </div>
+
+              <div class="form__group">
+                <label for="campo-email" class="form__label">Email</label>
+                <input type="email" id="campo-email" name="email" class="form__input" required placeholder="tucorreo@example.com">
+              </div>
+
+              <div class="form__group">
+                <label for="campo-telefono" class="form__label">Teléfono</label>
+                <input type="tel" id="campo-telefono" name="telefono" class="form__input" placeholder="0 000 000 000">
+              </div>
+
+              <div class="form__group">
+                <label for="campo-nivel" class="form__label">Nivel de interés</label>
+                <select id="campo-nivel" name="nivel" class="form__input">
+                  <option value="Inicial">Inicial</option>
+                  <option value="Primaria">Primaria</option>
+                  <option value="Secundaria">Secundaria</option>
+                </select>
+              </div>
+
+              <div class="form__group">
+                <label for="campo-mensaje" class="form__label">Mensaje</label>
+                <textarea id="campo-mensaje" name="mensaje" class="form__input" rows="4" required placeholder="¿En qué podemos ayudarte?"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary">Enviar consulta</button>
+
+              <!-- Mensaje de confirmación (oculto, se muestra con JS) -->
+              <p class="contacto__confirm" id="contacto-confirm" hidden>
+                <i class="fas fa-check-circle"></i> ¡Gracias por tu consulta! Te responderemos dentro de las 24 horas hábiles.
+              </p>
+            </form>
+          </div>
+
+          <!-- Datos de contacto + mapa + badges -->
+          <div class="contacto__info">
+            <!-- Datos de contacto (inyectados por JS) -->
+            <div class="contacto__datos">
+              <div class="dato">
+                <i class="fas fa-map-marker-alt dato__icon"></i>
+                <span id="contacto-direccion">Dirección</span>
+              </div>
+              <div class="dato">
+                <i class="fas fa-phone-alt dato__icon"></i>
+                <a href="#" id="contacto-telefono">Teléfono</a>
+              </div>
+              <div class="dato">
+                <i class="fas fa-envelope dato__icon"></i>
+                <a href="#" id="contacto-email">Email</a>
+              </div>
+              <div class="dato">
+                <i class="fas fa-clock dato__icon"></i>
+                <span id="contacto-horarios">Horarios</span>
+              </div>
+            </div>
+
+            <!-- Badges de confianza -->
+            <div class="contacto__badges">
+              <span class="badge"><i class="fas fa-check-circle badge__icon"></i>Colegio habilitado por ANEP</span>
+              <span class="badge"><i class="fas fa-check-circle badge__icon"></i>Exámenes internacionales Cambridge</span>
+              <span class="badge"><i class="fas fa-check-circle badge__icon"></i>Grupos reducidos</span>
+              <span class="badge"><i class="fas fa-check-circle badge__icon"></i>Educación personalizada</span>
+            </div>
+
+            <!-- Google Maps embebido -->
+            <div class="contacto__map">
+              <iframe
+                src="https://www.google.com/maps?q=Bulevar%20Artigas%203062%2C%20Montevideo%2C%20Uruguay&output=embed"
+                width="100%"
+                height="250"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa de ubicación del colegio">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container footer__grid">
+      <!-- Marca y eslogan -->
+      <div class="footer__brand">
+        <span class="footer__nombre" id="footer-nombre">Colegio</span>
+        <p class="footer__eslogan" id="footer-eslogan">Eslogan</p>
+      </div>
+
+      <!-- Enlaces rápidos -->
+      <div class="footer__col">
+        <h4 class="footer__heading">Enlaces rápidos</h4>
+        <ul class="footer__links">
+          <li><a href="#inicio" class="footer__link">Inicio</a></li>
+          <li><a href="#quienes-somos" class="footer__link">Quiénes somos</a></li>
+          <li><a href="#niveles" class="footer__link">Niveles</a></li>
+          <li><a href="#propuesta" class="footer__link">Propuesta</a></li>
+          <li><a href="#comunidad" class="footer__link">Comunidad</a></li>
+          <li><a href="#contacto" class="footer__link">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Datos de contacto -->
+      <div class="footer__col">
+        <h4 class="footer__heading">Contacto</h4>
+        <ul class="footer__contact">
+          <li><i class="fas fa-map-marker-alt"></i><span id="footer-direccion">Dirección</span></li>
+          <li><i class="fas fa-phone-alt"></i><span id="footer-telefono">Teléfono</span></li>
+          <li><i class="fas fa-envelope"></i><span id="footer-email">Email</span></li>
+        </ul>
+      </div>
+
+      <!-- Redes sociales -->
+      <div class="footer__col">
+        <h4 class="footer__heading">Seguinos</h4>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer__social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">
+        <span id="footer-year">2026</span> © <span id="footer-bottom-nombre">Colegio</span>. Todos los derechos reservados.
+      </p>
+      <p class="footer__credit">
+        Demo creada por <a href="https://www.langasoft.uy" target="_blank" rel="noopener" class="footer__credit-link">LangaSoft</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a
+    href="#"
+    target="_blank"
+    rel="noopener"
+    class="whatsapp-btn"
+    id="whatsapp-btn"
+    aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp whatsapp-btn__icon"></i>
+    <span class="whatsapp-btn__tooltip">¿Tenés dudas? Escribinos</span>
+  </a>
+
+  <!-- Script principal -->
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
